@@ -1,0 +1,106 @@
+.container{
+	display: flex;
+	justify-content: center;
+}
+
+form{
+	margin-bottom: -28px;
+}
+
+body{
+	background-color: #E5E5E5;
+}
+
+.todo{
+	width: 476px;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+.high_title{
+	text-align: center;
+	margin: 25px 216px 12px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+
+.low_title{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+
+.type_high_task, .type_low_task{
+	margin: 8px;
+	box-sizing: border-box;
+	width: 460px;
+	height: 45px;
+	border-radius: 6px;
+	border: 1px solid #989898;
+	padding: 12px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+
+.type_high_task:focus, .type_low_task:focus{
+	outline: none;
+}
+
+.plus_low_button, .plus_high_button{
+	border: none;
+	font-size: 23px;
+	background-color: #fff;
+	position: relative;
+	top: -42px; 
+	left: 429px;
+	cursor: pointer;
+}
+
+.task_item{
+	display: block;
+	margin: 0px 8px 8px;
+	border-radius: 6px;
+	border: 1px solid #989898;
+	padding: 12px;
+	box-sizing: border-box;
+	word-wrap: break-word;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	position: relative;
+}
+
+.checkbox{
+	position: relative;
+	top: 5px; 
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	margin-right: 12px; 
+  appearance: none;
+  -webkit-appearance: none; 
+  outline: 1px solid #998899;
+	cursor: pointer;
+}
+
+.checkbox.done{
+	background: transparent url(img/ellipse.svg) no-repeat center;
+	padding: 3px;
+}
+
+label.done{
+	background-color: #F4F4F4;
+}
+
+button.done{
+	background-color: #F4F4F4;
+}
+
+.delete_task{
+	cursor: pointer;
+	border: none;
+	font-size: 23px;
+	background-color: #fff;
+	position: absolute;
+	right: 8px;
+	top: 14px;
+}
