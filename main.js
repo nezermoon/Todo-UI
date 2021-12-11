@@ -32,8 +32,13 @@ function createHighTask() {
 	label.prepend(checkbox);
 	label.append(deleteTask);
 
-	if(typeHighTask.value.trim() !== '') {
+	try {
+		if(typeHighTask.value.trim() === '') {
+			throw new SyntaxError('Введите задачу');
+		}
 		highPriority.append(label);
+	} catch(err) {
+		alert(err.message);
 	}
 
 	function addChecked() {
@@ -81,8 +86,13 @@ function createLowTask() {
 
 	label.prepend(checkbox);
 
-	if(typeLowTask.value.trim() !== '') {
+	try {
+		if(typeLowTask.value.trim() === '') {
+			throw new SyntaxError('Введите задачу');
+		}
 		lowPriority.append(label);
+	} catch(err) {
+		alert(err.message);
 	}
 
 	function addChecked() {
